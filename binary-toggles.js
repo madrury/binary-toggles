@@ -41,9 +41,6 @@ var binary_toggle = function(nm) {
                         .prop('checked', true)
         }
 
-        // Initialize the sate of a new binary toggle.
-        // Pure convenience function.
-
     }
 
 }
