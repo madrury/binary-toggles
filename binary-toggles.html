@@ -13,3 +13,28 @@
 
 <script type="text/javascript" src="jquery-2.2.3.js"></script>
 <script type="text/javascript" src="binary-toggles.js"></script>
+
+<script>
+  var toggle_parent = $('#toggles')
+
+  // Create the binary elements.
+  var cat = binary_toggle('cat')
+  var dog = binary_toggle('dog')
+  var iguana = binary_toggle('iguana')
+
+  // Display the elements.
+  cat.render(toggle_parent)
+  dog.render(toggle_parent)
+  iguana.render(toggle_parent)
+
+  // Make some elections
+  cat.select('yes')
+  dog.select('no')
+  iguana.select('yes')
+
+  // Bind event listeners
+  cat.bind_listeners()
+  dog.bind_listeners()
+  iguana.bind_listeners()
+
+</script>
