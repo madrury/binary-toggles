@@ -12,11 +12,10 @@ var binary_toggle = function(nm) {
         //      toggle under.
         render: function(par) {
             parent_elem = par
-            parent_elem.append('<p>')
-                       .append('Toggle for ' + name)
+            parent_elem.append('Toggle for ' + name)
                        .append('<input type=radio name="' + name + '" value=yes>Yes')
                        .append('<input type=radio name="' + name + '" value=no>No')
-                       .append('</p>')
+                       .append('<br>')
         },
 
         // Select a specific value of the toggle
